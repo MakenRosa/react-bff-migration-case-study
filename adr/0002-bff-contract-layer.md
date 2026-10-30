@@ -1,10 +1,15 @@
-﻿# ADR 0002 - BFF Contract Layer
+# Technical note: BFF contracts
 
-## Decision
-Use a BFF layer to decouple front-end modules from microservice details.
+## Scope
 
-## Why
-Improve maintainability and reduce blast radius from backend contract changes.
+This note discusses a common API integration pattern. It does not publish an internal architectural decision or contract.
 
-## Consequences
-Adds one integration layer, but improves long-term evolution.
+## Pattern
+
+A BFF can consume backend APIs, validate data and return a response suited to a particular frontend. The consumer works against that contract instead of depending on every upstream detail.
+
+## Tradeoffs
+
+Response shaping can make frontend integration clearer, while adding an API layer to maintain and validate. This does not remove the need to handle upstream changes and failures.
+
+No real endpoints, payloads, validation rules or service identifiers are disclosed.

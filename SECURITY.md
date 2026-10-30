@@ -1,10 +1,9 @@
-﻿# Security and Confidentiality
+# Public documentation boundary
 
-This repository is intentionally documentation-only.
+This repository contains a general portfolio account and conceptual engineering notes. It is not company documentation and does not claim company endorsement or publication approval.
 
-It excludes:
-- Company source code
-- Internal endpoint details
-- Any customer or production data
+The current documents exclude proprietary code, internal metrics and costs, customer or operational data, business results, partner identities, vendor migrations, production prompts, service topology, private endpoints, real payloads, internal policies and infrastructure identifiers.
 
-All metrics are shared at an aggregated level.
+Examples are conceptual. They must not be treated as a reconstruction of a company's implementation.
+
+Company systems, tickets, source repositories and knowledge documents are not distributed here.

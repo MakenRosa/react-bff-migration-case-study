@@ -1,28 +1,31 @@
-﻿# React + BFF Migration - Case Study
+# Desenvolvimento frontend e integração com BFF
 
-## Overview
-This case study describes the migration of a critical legacy AngularJS module to a modular React/TypeScript architecture integrated through a Backend-for-Frontend (BFF) layer.
+Relato da minha atuação em desenvolvimento de interfaces e integração de APIs, apresentado em termos gerais para portfólio.
 
-## Business outcomes
-- **80%+** improvement in time-to-interaction
-- **80%+** unit-test coverage in the migrated scope
-- Improved maintainability and team delivery speed
+## Minha contribuição
 
-## Problem
-The legacy module had high coupling, slower rendering, and difficult evolution for new product requirements.
+- Desenvolvimento de componentes e telas em React e TypeScript.
+- Implementação de endpoints em Node.js para consumo de APIs de backend.
+- Validações e adaptação das respostas aos dados necessários à interface.
+- Integração das telas com os endpoints do BFF.
 
-## Solution strategy
-1. Decompose legacy screens into modular React components
-2. Introduce route-level lazy loading
-3. Centralize async data patterns via React Query
-4. Move integration details behind a BFF contract
-5. Add automated tests on critical paths
+Essa atuação envolve a conexão entre interface, contratos de API e tratamento dos dados entregues ao frontend.
 
-## Deliverables in this repository
-- Architecture notes (`docs/architecture.md`)
-- Migration sequence (`docs/sequence.md`)
-- Decision records (`adr/`)
-- Security/NDA boundary (`SECURITY.md`)
+## Conhecimentos demonstrados
 
-## Security
-No proprietary source code is published here.
+Separação de responsabilidades, componentes reutilizáveis, contratos de API, validação de dados e integração entre frontend e backend.
+
+As notas abaixo discutem padrões gerais de engenharia. Elas não reconstituem um sistema empresarial nem descrevem sua arquitetura de produção:
+
+- [Responsabilidades de frontend e BFF](docs/architecture.md)
+- [Roteiro conceitual de modernização](docs/sequence.md)
+- [Discussão sobre carregamento por rota](adr/0001-lazy-loading-strategy.md)
+- [Discussão sobre contratos no BFF](adr/0002-bff-contract-layer.md)
+
+## English summary
+
+This portfolio account describes my general contribution to frontend development and API integration: React and TypeScript components and screens, Node.js BFF endpoints, validation, response shaping, and frontend integration. The supporting notes discuss common engineering patterns and do not reconstruct a company's production system.
+
+## Escopo público
+
+Este repositório contém somente texto descritivo e notas conceituais. Não publica código empresarial, métricas internas, resultados comerciais, nomes de módulos, parceiros, clientes, endpoints, contratos reais ou dados de produção. Consulte [SECURITY.md](SECURITY.md).

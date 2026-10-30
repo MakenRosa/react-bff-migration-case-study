@@ -1,10 +1,13 @@
-﻿# ADR 0001 - Lazy Loading Strategy
+# Technical note: route-level loading
 
-## Decision
-Adopt route-level lazy loading for heavy module boundaries.
+## Scope
 
-## Why
-Reduce initial payload and improve time-to-interaction.
+This note discusses a common frontend pattern. It is not an internal decision record or a statement about a company's implementation.
 
-## Consequences
-Requires loading-state design and chunk monitoring.
+## Pattern
+
+Load route-specific code when it is needed instead of including every route in the initial download.
+
+## Tradeoffs
+
+This can reduce initial work, while requiring suitable loading and failure states. The benefit depends on the application and must be measured in its own context. No internal benchmark or result is included.
